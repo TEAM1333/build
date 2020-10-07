@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+	<link rel="manifest" href="media/manifest.json">
+	<link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+
+
+	<script src="db.js"></script>
+	<script src="App.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="App.css">
+</head>
+
+<body>
+	<div id="v3d-container">
+		<div id="fullscreen_button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
+		<div id="preloader_div" class="preloader_div">
+			<div class="bar">
+				<div class="circle"></div>
+				<p>Loading...</p>
+			</div>
+		</div>
+		<div id="preloader" class="preloader-div" style="display:none">
+			<div class="preloader-container">
+				<div id="preloader_bar" class="preloader-bar"></div>
+			</div>
+		</div>
+		<div class="menu-div">
+			<div class="form-block w-form">
+				<div id="email-form" name="Scene Loader" data-name="Scene Loader" class="form">
+					<h1 class="heading">Select a Shoe:</h1>
+					<select id="scene_selector" name="Scenes" data-name="Scenes" required="" class="select-field w-select">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+					<input type="submit" value="Add Scene" data-wait="Please wait..." id="button_add" class="submit-button w-button">
+					<input type="submit" value="Remove Scene" data-wait="Please wait..." id="button_unload" class="submit-button-2 w-button">
+					<input type="submit" value="Replace Scene" data-wait="Please wait..." id="button_load" class="submit-button-3 w-button">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

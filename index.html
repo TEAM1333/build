@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<script>document.getElementsByTagName("html")[0].className += " js";</script>
+	<title>ECOMMERCE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="!SEO!">
+	<link href="media/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="media/webclip.png" rel="apple-touch-icon">
+	<style type="text/css">
+	.text {
+	  position: absolute;
+	  top: 76%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.title {
+	  position: absolute;
+	  top: 12%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	.behind {
+		position:relative
+	}
+<!--
+	P { margin-bottom: 0.21cm; color: #000000; text-decoration: none }
+	P.western { font-family: "Algerian", fantasy; font-size: 32pt }
+	P.frame-contents-western { font-family: "Algerian", fantasy; font-size: 32pt }
+	A:link { so-language: zxx }
+-->
+	<!--
+	How would I go about adding text behind a transparent image? 
+	https://www.sitepoint.com/community/t/how-would-i-go-about-adding-text-behind-a-transparent-image/275121
+	asasass
+	https://jsfiddle.net/8eqqunkj/
+	-->
+	.window {display:table;width:300px;height:300px;border-radius:50%;background-color:skyblue;position:relative;}
+	.tcell {display:table-cell;padding:18%;vertical-align:middle;text-align:center;font-family:New Times Roman;font-size:2em;color:red;)}
+	.windowframe {position:absolute;top:0;left:0;width:100%;height:100%;background-image:url(http://i.imgur.com/4HJbzEq.png);background-size:cover;}
+
+	#window {
+		position: relative;
+		width: 16em;
+		height: 16em;
+		padding: 0;
+		margin: 1em auto;
+		border-radius: 50%;
+		background-color: transparent;
+		background-image: url( 'media/android-chrome-512x512.png' );
+		background-size: cover;
+		box-shadow: 0 0 1em rgba( 0, 0, 0, 0.9 );
+		color: #fff;
+		list-style: none;
+	 }
+	#window li {
+		position: absolute;
+		text-shadow: 0 0 0.1em #000;
+	 }
+	#window li:nth-child(1) {
+		top: 5.8em;
+		left: 4.5em;
+	 }
+	#window li:nth-child(2) {
+		top: 3.8em;
+		left: 6.3em;
+	 }
+	#window li:nth-child(3) {
+		top: 3.8em;
+		left: 9em;
+	}
+	#window li:nth-child(4) {
+		top: 5.8em;
+		left: 10.6em;
+	}
+	#window li:nth-child(5) {
+		top: 8.4em;
+		left: 10.6em;
+	 }
+	#window li:nth-child(6) {
+		top: 10.4em;
+		left: 9em;
+	 }
+	#window li:nth-child(7) {
+		top: 10.4em;
+		left: 6.3em;
+	 }
+	#window li:nth-child(8) {
+		top: 8.4em;
+		left: 4.5em;
+	 }
+	#my_iframe {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+	#cam_button, #cam0_button, #cam1_button {
+		position: absolute;
+		width: 100px;
+		height: 30px;
+		margin-top: 10px;
+		background-color: DodgerBlue;
+		color: white;
+		text-align: center;
+		line-height: 30px;
+		cursor: pointer;
+	}
+	#cam_button {
+		left: 10px;
+	}
+	#cam0_button {
+		left: 120px;
+	}
+	#cam1_button {
+		left: 230px;
+	}
+	</style>
+</head>
+	<body lang="en-ZA" text="#000000" bgcolor="#0066cc" dir="LTR">
+		<div class="container">
+			<div class="title">
+				<p class="western" align="CENTER" style="margin-bottom: 0cm; background: transparent">
+					<font color="#ffffff">
+						<span style="background: #009999">
+							<font color="#000000">
+								<font face="Broadway, fantasy">
+									<font size="7" style="font-size: 48pt">
+										<i>Store</i>
+									</font>
+								</font>
+							</font>
+						</span>
+					</font>
+				</p>
+			</div>
+			<div>
+				<ul id="window">
+				  <li>E</li>
+				  <li>X</li>
+				  <li>A</li>
+				  <li>M</li>
+				  <li>P</li>
+				  <li>L</li>
+				  <li>E</li>
+				  <li>S</li>
+				</ul>
+			</div>
+			<div class="behind">
+				<img src="media/e-ShoeShop_72p.png" alt="e-ShoeShop" style="width:100%"></img>
+				<!--/-->
+				<p class="western" align="CENTER" style="margin-bottom: 0.4cm; background: transparent">
+					<span id="Frame1" dir="LTR" style="float: left; width: 100%; height: 100%; border: 1px solid #000000; padding: 0.15cm; background: #3399ff">
+						<!--/-->
+						<iframe id="my_iframe0" src="App.html" width="100%" height="100%" frameborder="0"></iframe>
+						<!--/-->
+					</span>
+				</p>
+				<p class="frame-contents-western" align="CENTER">
+					<!--/-->
+					<div id="cam_button">1st Person</div>
+					<div id="cam0_button">2nd Person</div>
+					<div id="cam1_button">3rd Person</div>	
+					<!--/-->
+				</p>
+				<!--/-->
+				<p class="western" align="CENTER" style="margin-bottom: 0.4cm; background: transparent">
+					<span id="Frame2" dir="LTR" style="float: left; width: 100%; height: 50%; border: 1px solid #000000; padding: 0.15cm; background: transparent">
+						<!--/-->
+						<iframe id="my_iframe0" src="a2c.html" width="100%" height="100%" frameborder="0"></iframe>
+						<!--/-->
+					</span>
+				</p>
+				<p class="frame-contents-western" align="CENTER">
+					<!--/-->
+					<!--/-->
+				</p>
+				<!--/-->
+			</div>
+		</div>
+	<!--br><br-->
+	</body>
+</html>
